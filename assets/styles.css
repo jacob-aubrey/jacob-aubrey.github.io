@@ -825,34 +825,42 @@ h3 {
 
 .contact-actions {
   display: grid;
-  gap: 1.5rem;
+  gap: 0.7rem;
 }
 
-.contact-email {
-  color: var(--teal);
-  font-family: ui-monospace, "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: clamp(1.3rem, 2.55vw, 2.05rem);
-  font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.1;
-  overflow-wrap: anywhere;
-  font-variant-numeric: slashed-zero;
-}
-
+.contact-primary-actions,
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem 1.2rem;
+  gap: 0.7rem;
 }
 
-.contact-links a {
+.contact-section .button-secondary {
+  color: var(--ink);
+  border-color: rgba(17, 40, 61, 0.42);
+}
+
+.contact-section .button-secondary:hover {
+  color: var(--ink);
+  border-color: var(--teal);
+  background: rgba(16, 113, 126, 0.1);
+}
+
+.contact-email {
+  font-variant-numeric: slashed-zero;
+  letter-spacing: -0.02em;
+}
+
+.contact-section .button-tertiary {
   color: var(--ink-soft);
-  font-size: 0.86rem;
-  font-weight: 700;
+  border-color: rgba(17, 40, 61, 0.26);
+  background: rgba(17, 40, 61, 0.035);
 }
 
-.contact-links a:hover {
-  color: var(--teal);
+.contact-section .button-tertiary:hover {
+  color: var(--ink);
+  border-color: rgba(17, 40, 61, 0.5);
+  background: rgba(16, 113, 126, 0.1);
 }
 
 .site-footer {
@@ -962,6 +970,14 @@ h3 {
     flex: 1 1 auto;
   }
 
+  .contact-primary-actions .button {
+    width: 100%;
+  }
+
+  .contact-links .button {
+    flex: 1 1 auto;
+  }
+
   .research-card {
     display: flex;
   }
@@ -1003,4 +1019,3 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
-
