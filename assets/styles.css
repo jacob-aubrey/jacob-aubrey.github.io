@@ -404,6 +404,13 @@ h3 {
   color: var(--ink-soft);
 }
 
+@media (min-width: 861px) {
+  .split-heading > p {
+    /* Match the h2's responsive bottom margin so visible text bottoms align. */
+    margin-bottom: clamp(1.0125rem, 1.935vw, 1.8675rem);
+  }
+}
+
 .research-section {
   background: var(--paper);
 }
