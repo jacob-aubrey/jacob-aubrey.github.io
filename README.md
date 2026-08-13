@@ -20,7 +20,7 @@ All visible page content is in `index.html` and visual styling is in `assets/sty
 
 ## Updating research cards in GitHub
 
-You can update the page entirely in your web browser. Open the [repository](https://github.com/jdaub00/jdaub00.github.io), open `index.html`, choose the pencil icon (**Edit this file**), then select **Commit changesâ€¦**. GitHub Pages normally reflects a saved change within a few minutes.
+You can update the page entirely in your web browser. Open the [repository](https://github.com/jacob-aubrey/jacob-aubrey.github.io), open `index.html`, choose the pencil icon (**Edit this file**), then select **Commit changesâ€¦**. GitHub Pages normally reflects a saved change within a few minutes.
 
 ### Change a title or description
 
@@ -46,10 +46,10 @@ The three current research visuals are intentionally styled illustrations made i
 
 ## GitHub Pages publishing
 
-1. Create a public repository named `jdaub00.github.io` under the `jdaub00` account.
+1. Create a public repository named `jacob-aubrey.github.io` under the `jacob-aubrey` account.
 2. Place the contents of this `site` folder at the repository root.
 3. In the repository's **Settings -> Pages**, set the publishing source to **Deploy from a branch**, then select `main` and `/ (root)`.
-4. Once GitHub reports a successful Pages deployment, the site URL will be `https://jdaub00.github.io/`.
+4. Once GitHub reports a successful Pages deployment, the site URL will be `https://jacob-aubrey.github.io/`.
 5. Open that root URL on a phone before using it in a QR code. Test every email, profile, lab, publication, and CV link.
 
 ## Design notes
