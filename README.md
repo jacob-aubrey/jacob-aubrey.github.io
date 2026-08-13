@@ -18,6 +18,32 @@ All visible page content is in `index.html` and visual styling is in `assets/sty
 - **CV:** replace `assets/files/jacob-aubrey-cv.pdf`; the page already links to that path.
 - **Portrait:** replace `assets/images/jacob-aubrey-profile.png`; keep the descriptive `alt` text.
 
+## Updating research cards in GitHub
+
+You can update the page entirely in your web browser. Open the [repository](https://github.com/jdaub00/jdaub00.github.io), open `index.html`, choose the pencil icon (**Edit this file**), then select **Commit changesâ€¦**. GitHub Pages normally reflects a saved change within a few minutes.
+
+### Change a title or description
+
+1. In `index.html`, press `Ctrl+F` (or `Cmd+F` on Mac) and search for the exact current title, for example `Photon-counting CT protocol optimization`.
+2. Change the title between `<h3>` and `</h3>`, or the paragraph immediately underneath it between `<p>` and `</p>`.
+3. Leave the surrounding `<article>` and `<div>` lines in place, then commit the change.
+
+### Replace a research visual with a figure or image
+
+The three current research visuals are intentionally styled illustrations made in CSS rather than image files. To use your own figure, diagram, or photo instead:
+
+1. Prepare a landscape JPG or PNG (about 1600 pixels wide is ideal). Use only material you can publish publicly: no raw DICOM, patient-identifying content, confidential review material, or unapproved third-party figures.
+2. In the repository, open `assets/images`, choose **Add file â†’ Upload files**, and upload it with a clear name such as `research-01-2026.jpg`.
+3. In `index.html`, find the matching visual block: `ct-visual` for card 01, `spectrum-visual` for card 02, or `data-visual` for card 03. Replace that entire visual block with this template, changing the filename and plain-language alt text:
+
+```html
+<div class="research-visual">
+  <img class="research-image" src="assets/images/research-01-2026.jpg" alt="Brief description of what the figure shows.">
+</div>
+```
+
+4. Commit the update and check the live page. The image will crop automatically to the card shape. Once a card uses an image, later updates are as easy as uploading a new image and changing that filename.
+
 ## GitHub Pages publishing
 
 1. Create a public repository named `jdaub00.github.io` under the `jdaub00` account.
