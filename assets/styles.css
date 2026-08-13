@@ -38,7 +38,8 @@ a {
   text-underline-offset: 0.18em;
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 3px solid var(--rust);
   outline-offset: 4px;
 }
@@ -267,6 +268,11 @@ h3 {
   text-align: center;
   text-decoration: none;
   transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+button.button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .button:hover {
