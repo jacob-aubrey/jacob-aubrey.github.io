@@ -2,6 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <!-- Google Analytics: basic site measurement with advertising features disabled. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMMH1Y0HWW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-DMMH1Y0HWW", {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Jacob D. Aubrey is a chemist and medical-imaging researcher studying photon-counting CT, contrast-agent chemistry, and quantitative imaging methods.">
     <meta name="theme-color" content="#10283f">
@@ -9,7 +20,7 @@
     <meta property="og:description" content="Photon-counting CT, high-Z contrast agents, material decomposition, and artifact reduction.">
     <meta property="og:type" content="website">
     <title>Jacob D. Aubrey | Chemist and medical-imaging researcher</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260813-5">
+    <link rel="stylesheet" href="assets/styles.css?v=20260813-6">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -38,7 +49,7 @@
             <p class="hero-statement">I study photon-counting CT, contrast-agent chemistry, and quantitative imaging methods, with a focus on high-Z contrast agents, material decomposition, and artifact reduction.</p>
 
             <div class="hero-actions" aria-label="Primary links">
-              <a class="button button-primary" href="mailto:aubrey.jd00@gmail.com" aria-label="Email Jacob at aubrey dot jay dee zero zero at gmail dot com">Email Jacob</a>
+              <button class="button button-primary email-action" type="button" data-email-action aria-label="Email Jacob at aubrey dot jay dee zero zero at gmail dot com">Email Jacob</button>
               <a class="button button-secondary" href="https://scholar.google.com/citations?user=L1Xv-F0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
 
@@ -193,7 +204,7 @@
           </div>
           <div class="contact-actions">
             <div class="contact-primary-actions">
-              <a class="button button-primary contact-email" href="mailto:aubrey.jd00@gmail.com" aria-label="Email Jacob at aubrey dot jay dee zero zero at gmail dot com">aubrey.jd00@gmail.com</a>
+              <button class="button button-primary contact-email email-action" type="button" data-email-action aria-label="Email Jacob at aubrey dot jay dee zero zero at gmail dot com">aubrey.jd00@gmail.com</button>
               <a class="button button-secondary" href="https://scholar.google.com/citations?user=L1Xv-F0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
             <div class="contact-links">
@@ -211,5 +222,19 @@
         <p>&copy; <span id="year">2026</span> Jacob D. Aubrey</p>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        var emailAddress = "aubrey.jd00@gmail.com";
+        document.querySelectorAll("[data-email-action]").forEach(function (button) {
+          button.addEventListener("click", function () {
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "email_button_click");
+            }
+            window.location.href = "mailto:" + emailAddress;
+          });
+        });
+      }());
+    </script>
   </body>
 </html>
