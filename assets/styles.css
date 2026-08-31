@@ -240,6 +240,17 @@ h3 {
   font-size: 1rem;
 }
 
+.hero-lab-link {
+  color: rgba(255, 255, 255, 0.94);
+  font-weight: 700;
+  text-decoration-color: rgba(149, 208, 211, 0.7);
+}
+
+.hero-lab-link:hover {
+  color: #f1c27f;
+  text-decoration-color: currentColor;
+}
+
 .hero-statement {
   max-width: 43rem;
   margin-bottom: 2.25rem;
@@ -867,6 +878,17 @@ button.button {
   color: var(--ink);
   border-color: rgba(17, 40, 61, 0.5);
   background: rgba(16, 113, 126, 0.1);
+}
+
+.lab-site-link {
+  gap: 0.55rem;
+  padding: 0.38rem 0.9rem 0.38rem 0.45rem;
+}
+
+.lab-site-logo {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
 }
 
 .site-footer {
