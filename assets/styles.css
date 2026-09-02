@@ -411,41 +411,11 @@ button.button {
 }
 
 .split-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(250px, 0.56fr);
-  gap: 2rem 5rem;
-  align-items: end;
   margin-bottom: 3.4rem;
 }
 
 .section-heading h2 {
-  max-width: 11ch;
-}
-
-.section-heading > p {
-  max-width: 32rem;
-  margin-bottom: 0.55rem;
-  color: var(--ink-soft);
-}
-
-.inline-lab-link {
-  color: inherit;
-  text-decoration-color: rgba(22, 105, 120, 0.42);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
-  transition: color 160ms ease, text-decoration-color 160ms ease;
-}
-
-.inline-lab-link:hover {
-  color: var(--teal-deep);
-  text-decoration-color: currentColor;
-}
-
-@media (min-width: 861px) {
-  .split-heading > p {
-    /* Match the h2's responsive bottom margin so visible text bottoms align. */
-    margin-bottom: clamp(1.0125rem, 1.935vw, 1.8675rem);
-  }
+  max-width: 28ch;
 }
 
 .research-section {
@@ -929,7 +899,6 @@ button.button {
 
 @media (max-width: 860px) {
   .hero-grid,
-  .split-heading,
   .publications-layout,
   .recognition-layout,
   .contact-layout {
@@ -945,12 +914,10 @@ button.button {
     justify-self: start;
   }
 
-  .split-heading,
   .publications-layout {
     gap: 1.5rem;
   }
 
-  .section-heading h2,
   .publications-intro h2,
   .recognition-layout h2 {
     max-width: 15ch;
