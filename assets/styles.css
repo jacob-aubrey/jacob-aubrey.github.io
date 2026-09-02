@@ -245,7 +245,7 @@ h3 {
 }
 
 .hero-affiliation-link {
-  color: rgba(255, 255, 255, 0.86);
+  color: inherit;
   font-weight: inherit;
   text-decoration-color: rgba(149, 208, 211, 0.32);
   text-decoration-thickness: 1px;
