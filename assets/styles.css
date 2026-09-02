@@ -428,6 +428,19 @@ button.button {
   color: var(--ink-soft);
 }
 
+.inline-lab-link {
+  color: inherit;
+  text-decoration-color: rgba(22, 105, 120, 0.42);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.inline-lab-link:hover {
+  color: var(--teal-deep);
+  text-decoration-color: currentColor;
+}
+
 @media (min-width: 861px) {
   .split-heading > p {
     /* Match the h2's responsive bottom margin so visible text bottoms align. */
