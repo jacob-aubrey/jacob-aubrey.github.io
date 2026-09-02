@@ -235,10 +235,6 @@ h3 {
 }
 
 .hero-affiliation {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.28rem 0.5rem;
-  align-items: center;
   margin-bottom: 1.9rem;
   color: rgba(255, 255, 255, 0.77);
   font-size: 1rem;
@@ -248,35 +244,18 @@ h3 {
   color: rgba(255, 255, 255, 0.48);
 }
 
-.hero-org-link {
-  display: inline-flex;
-  gap: 0.36rem;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.94);
-  font-weight: 700;
-  text-decoration-color: rgba(149, 208, 211, 0.7);
-  white-space: nowrap;
+.hero-affiliation-link {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: inherit;
+  text-decoration-color: rgba(149, 208, 211, 0.32);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.23em;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
 }
 
-.hero-org-link:hover {
+.hero-affiliation-link:hover {
   color: #f1c27f;
-  text-decoration-color: currentColor;
-}
-
-.hero-org-logo {
-  display: block;
-  flex: 0 0 auto;
-  width: auto;
-  object-fit: contain;
-}
-
-.hero-rpi-logo {
-  height: 1.2rem;
-}
-
-.hero-lab-logo {
-  width: 1.38rem;
-  height: 1.38rem;
+  text-decoration-color: rgba(240, 182, 108, 0.88);
 }
 
 .hero-statement {
