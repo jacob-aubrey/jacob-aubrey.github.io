@@ -763,6 +763,69 @@ button.button {
   font-weight: 750;
 }
 
+/* Recorded conference presentations */
+.presentations-section {
+  background: var(--paper);
+}
+
+.presentation-entry {
+  max-width: 900px;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.presentation-meta {
+  margin-bottom: 0.7rem;
+  color: var(--teal);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.presentation-entry h3 {
+  max-width: 800px;
+  margin-bottom: 0.85rem;
+}
+
+.presentation-description {
+  max-width: 760px;
+  color: var(--ink-soft);
+}
+
+.presentation-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.presentation-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.presentation-watch {
+  margin-top: 1.3rem;
+  margin-bottom: 0;
+}
+
+.presentation-watch a {
+  color: var(--teal);
+  font-size: 0.93rem;
+  font-weight: 700;
+}
+
+.presentation-watch a:hover {
+  color: var(--teal-deep);
+}
+
 .recognition-section {
   padding-block: clamp(3.5rem, 7vw, 5.5rem);
   background: #e9e4d9;
@@ -991,7 +1054,10 @@ button.button {
   }
 
   .site-nav {
-    gap: 0.65rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 0.55rem;
+    row-gap: 0;
   }
 
   .site-nav a {
